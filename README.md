@@ -52,7 +52,7 @@ batch_size = 128\
 開始訓練
 ![image](https://user-images.githubusercontent.com/94088141/143765657-3b3d74cd-6b26-4a67-9e21-bfbf24dd294d.png)
 
-繪出訓練loss、validation_loss
+繪出訓練loss、validation_loss\
 ![image](https://user-images.githubusercontent.com/94088141/143765666-931eff39-d776-43f0-8b2d-17635796135e.png)
 
 儲存model、對測試資料做預測並寫出目標變數price
