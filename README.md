@@ -10,7 +10,7 @@ sim.py為本次作業程式
 -------
 google colab
 
-需用到安裝包說明
+需用到套件說明
 ------
 ![image](https://user-images.githubusercontent.com/94088141/147402850-cefd6a30-e848-4bb2-bfef-926a98f2628c.png)
 Numpy
