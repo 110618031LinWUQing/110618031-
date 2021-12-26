@@ -62,24 +62,30 @@ Matpotlib有兩個重要的模組：\
 宣告圖片長寬、角色類別個數、切割資料比例、圖片路徑\
 ![image](https://user-images.githubusercontent.com/94088141/147409337-2b3924c3-e667-41a6-93be-9acf9e0cf908.png)\
 載入圖片把圖片從原本BGE轉成RGB、修改圖片長寬。
-![image](https://user-images.githubusercontent.com/94088141/147409373-90716a36-d15b-472c-a059-f7ccb2129435.png)\
+![image](https://user-images.githubusercontent.com/94088141/147409373-90716a36-d15b-472c-a059-f7ccb2129435.png)
 
 ![image](https://user-images.githubusercontent.com/94088141/147410189-c1b4b1b8-c4c6-4de2-a555-77847cd5c7da.png)\
 ![image](https://user-images.githubusercontent.com/94088141/147410195-50df410a-6964-47ba-8ead-bc5a1f88d618.png)\
-<!-- 各角色圖片個數、 -->
+各角色圖片個數、訓練集與驗證集內容(張數,長寬,rgb三層)(張數,角色個數)\
 ![image](https://user-images.githubusercontent.com/94088141/147410205-c5a50d45-2580-443a-9606-8e3a41ffff71.png)
 ![image](https://user-images.githubusercontent.com/94088141/147410207-4105dd15-8786-4135-8c87-5a2e83f61566.png)\
-
+建模\
+為Sequentail序列模型\
+宣告pretrain model使用ResNet50\
+第一層:ResNet50，第二層:flatten，第三層:1024個神經元、激活函數:relu，第四層:512個神經元、激活函數:relu，第五層:50個神經元、激活函數:softmax\
+model.compile配置模型\
+優化器(optimizer):Adam\
+損失函數(loss_funtion):categorical_crossentropy\
+metrics(評估模型指標):accuracy(準確率)\
 ![image](https://user-images.githubusercontent.com/94088141/147410212-899d1788-969d-48b8-81e2-e3d982edc52b.png)\
 
 ![image](https://user-images.githubusercontent.com/94088141/147410220-67639fb9-ae01-4b23-a332-2bc852f31d36.png)\
 ![image](https://user-images.githubusercontent.com/94088141/147410230-09ce6bb7-27d6-4047-ae0a-404a049b3604.png)\
 ![image](https://user-images.githubusercontent.com/94088141/147410236-b0ebc8ac-9c24-41e6-8c5c-c6b089496a5e.png)
-
+視覺化\
 ![image](https://user-images.githubusercontent.com/94088141/147410240-5e95b8a9-0fa3-4ac3-a781-cbcdf1edb733.png)\
-
-![image](https://user-images.githubusercontent.com/94088141/147410258-280af50e-8bb8-4790-9ddc-d783dc2b24a1.png)\
-
+![image](https://user-images.githubusercontent.com/94088141/147410258-280af50e-8bb8-4790-9ddc-d783dc2b24a1.png)
+讀取測試檔、資料前處理、預測、寫出為csv檔。\
 ![image](https://user-images.githubusercontent.com/94088141/147410264-39cd0410-1b71-4d57-b673-33ad900f9ea8.png)\
 
 改善方法
