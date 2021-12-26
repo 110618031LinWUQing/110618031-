@@ -1,23 +1,19 @@
 # 110618031林悟清  自動碩一
-房價預測作業
+辛普森影像辨識作業
 =====
 -----
 各檔案說明
 -------
-train-v3.csv為訓練集\
-valid-v3.csv為驗證集\
-test-v3.csv為測試集\
-機器學習競賽.ppxs為報告\
-score66098(1).py為本次作業程式
+
 
 需用到安裝包說明
 ------
-keras.model\
-keras.layers\
-pandas\
-seaborn\
-matplotlib.pyplot\
-sklearn.preprocessing
+![image](https://user-images.githubusercontent.com/94088141/147402850-cefd6a30-e848-4bb2-bfef-926a98f2628c.png)
+#########Numpy
+NumPy是Python語言的一個擴充程式庫。支援高階大量的維度陣列與矩陣運算，此外也針對陣列運算提供大量的數學函數函式庫。
+h5py
+
+glob
 
 程式說明
 ------
