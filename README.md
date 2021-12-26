@@ -61,45 +61,33 @@ Matpotlib有兩個重要的模組：\
 ![image](https://user-images.githubusercontent.com/94088141/147409262-de784ca5-b05a-41ab-94be-b719a90ba4d5.png)\
 宣告圖片長寬、角色類別個數、切割資料比例、圖片路徑\
 ![image](https://user-images.githubusercontent.com/94088141/147409337-2b3924c3-e667-41a6-93be-9acf9e0cf908.png)\
-
+載入圖片把圖片從原本BGE轉成RGB、修改圖片長寬。
 ![image](https://user-images.githubusercontent.com/94088141/147409373-90716a36-d15b-472c-a059-f7ccb2129435.png)\
 
-![image](https://user-images.githubusercontent.com/94088141/143763858-6c2184cf-cb5a-45ac-9b4b-8d9d33f1f1ce.png)\
-此處檔案路徑須更變為你train-v3.csv所放置檔案位置\
-![image](https://user-images.githubusercontent.com/94088141/143763935-ed05381b-a4fc-4865-917e-53cc35818ce3.png)\
-此處檔案路徑須更變為你valid-v3.csv所放置檔案位置\
-![image](https://user-images.githubusercontent.com/94088141/143763941-4e620bac-74dd-4897-8185-296139bcb934.png)\
-此處檔案路徑須更變為你test-v3.csv所放置檔案位置
+![image](https://user-images.githubusercontent.com/94088141/147410189-c1b4b1b8-c4c6-4de2-a555-77847cd5c7da.png)\
+![image](https://user-images.githubusercontent.com/94088141/147410195-50df410a-6964-47ba-8ead-bc5a1f88d618.png)\
 
-訓練集、驗證集跟測試集把相關度低的特徵移除不加入訓練:(id、zipcode、sale_yr、sale_month、sale_day、yr_renovated)\
-![image](https://user-images.githubusercontent.com/94088141/143765610-58153fa4-187b-4440-a264-7836c3ae8f32.png)
-![image](https://user-images.githubusercontent.com/94088141/143765620-8921c94f-68b0-430c-87d3-81a3d34be349.png)
-![image](https://user-images.githubusercontent.com/94088141/143765630-8f71de2d-b6a5-4955-b0dd-d5624153200c.png)
+![image](https://user-images.githubusercontent.com/94088141/147410205-c5a50d45-2580-443a-9606-8e3a41ffff71.png)
+![image](https://user-images.githubusercontent.com/94088141/147410207-4105dd15-8786-4135-8c87-5a2e83f61566.png)\
 
+![image](https://user-images.githubusercontent.com/94088141/147410212-899d1788-969d-48b8-81e2-e3d982edc52b.png)\
 
-資料正規化\
-![image](https://user-images.githubusercontent.com/94088141/143765638-3b7db877-391c-404b-8f84-d0ac0e553488.png)
+![image](https://user-images.githubusercontent.com/94088141/147410220-67639fb9-ae01-4b23-a332-2bc852f31d36.png)\
+![image](https://user-images.githubusercontent.com/94088141/147410230-09ce6bb7-27d6-4047-ae0a-404a049b3604.png)\
+![image](https://user-images.githubusercontent.com/94088141/147410236-b0ebc8ac-9c24-41e6-8c5c-c6b089496a5e.png)
 
-建模\
-kerenel_initializer = RandomNormale\
-activation = relu\
-epoch = 400 \
-batch_size = 128\
-中間會經過dropout(0.2)把20%神經元輸出丟掉減少過擬和\
-![image](https://user-images.githubusercontent.com/94088141/143765642-deb05f57-ec32-4e5e-a495-3981a94cf240.png)
+![image](https://user-images.githubusercontent.com/94088141/147410240-5e95b8a9-0fa3-4ac3-a781-cbcdf1edb733.png)\
+
+![image](https://user-images.githubusercontent.com/94088141/147410258-280af50e-8bb8-4790-9ddc-d783dc2b24a1.png)\
+
+![image](https://user-images.githubusercontent.com/94088141/147410264-39cd0410-1b71-4d57-b673-33ad900f9ea8.png)\
 
 
-查看model層數與各層參數數量、總參數資訊
-![image](https://user-images.githubusercontent.com/94088141/143765649-aa33d335-5a23-4e6a-99ea-568f1b7a4114.png)
 
-開始訓練
-![image](https://user-images.githubusercontent.com/94088141/143765657-3b3d74cd-6b26-4a67-9e21-bfbf24dd294d.png)
 
-繪出訓練loss、validation_loss\
-![image](https://user-images.githubusercontent.com/94088141/143765666-931eff39-d776-43f0-8b2d-17635796135e.png)
 
-儲存model、對測試資料做預測並寫出目標變數price
-![image](https://user-images.githubusercontent.com/94088141/143765671-c04a270a-e918-4f2d-b8c3-bb71f1e5e139.png)
+
+
 
 
 
