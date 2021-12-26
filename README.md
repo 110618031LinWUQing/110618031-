@@ -78,19 +78,21 @@ model.compile配置模型\
 損失函數(loss_funtion):categorical_crossentropy\
 metrics(評估模型指標):accuracy(準確率)\
 ![image](https://user-images.githubusercontent.com/94088141/147410212-899d1788-969d-48b8-81e2-e3d982edc52b.png)\
-
-![image](https://user-images.githubusercontent.com/94088141/147410220-67639fb9-ae01-4b23-a332-2bc852f31d36.png)\
-![image](https://user-images.githubusercontent.com/94088141/147410230-09ce6bb7-27d6-4047-ae0a-404a049b3604.png)\
-![image](https://user-images.githubusercontent.com/94088141/147410236-b0ebc8ac-9c24-41e6-8c5c-c6b089496a5e.png)
+設置batch size 、epochs\
+lr_schedule:當epochs次數越訓練到後面時learning rate會越小，以利學到更好的解。\
+Imagedatagenerator:利用現有的資料經過旋轉、翻轉、縮放…等方式增加更多的訓練資料。\
+ModelCheckpoint:存取最佳的訓練模型，EarlyStopping:如果val_accuracy連續三次沒有增加則會提早結束訓練防止overfitting。\
+![image](https://user-images.githubusercontent.com/94088141/147413498-6d3ee472-a47b-47b4-b40e-28d97087bee2.png)\
 視覺化\
 ![image](https://user-images.githubusercontent.com/94088141/147410240-5e95b8a9-0fa3-4ac3-a781-cbcdf1edb733.png)\
 ![image](https://user-images.githubusercontent.com/94088141/147410258-280af50e-8bb8-4790-9ddc-d783dc2b24a1.png)
 讀取測試檔、資料前處理、預測、寫出為csv檔。\
-![image](https://user-images.githubusercontent.com/94088141/147410264-39cd0410-1b71-4d57-b673-33ad900f9ea8.png)\
+![image](https://user-images.githubusercontent.com/94088141/147410264-39cd0410-1b71-4d57-b673-33ad900f9ea8.png)
 
 改善方法
 -------------------
-
+可以讓訓練圖片為灰階圖片下去訓練，因為此任務的圖片顏色貌似不太是分辨的重點特徵。\
+使用更強大的、不同的pretrained model做測試。\ 
 
 
 
