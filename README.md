@@ -96,7 +96,7 @@ ModelCheckpoint:存取最佳的訓練模型，EarlyStopping:如果val_accuracy�
 改善方法
 -------------------
 可以讓訓練圖片為灰階圖片下去訓練，因為此任務的圖片顏色貌似不太是分辨的重點特徵。\
-使用更強大的、不同的pretrained model做測試。\ 
+使用更強大的、不同的pretrained model做測試。
 
 
 
