@@ -66,7 +66,7 @@ Matpotlib有兩個重要的模組：\
 
 ![image](https://user-images.githubusercontent.com/94088141/147410189-c1b4b1b8-c4c6-4de2-a555-77847cd5c7da.png)\
 ![image](https://user-images.githubusercontent.com/94088141/147410195-50df410a-6964-47ba-8ead-bc5a1f88d618.png)\
-
+<!-- 各角色圖片個數、 -->
 ![image](https://user-images.githubusercontent.com/94088141/147410205-c5a50d45-2580-443a-9606-8e3a41ffff71.png)
 ![image](https://user-images.githubusercontent.com/94088141/147410207-4105dd15-8786-4135-8c87-5a2e83f61566.png)\
 
@@ -82,6 +82,8 @@ Matpotlib有兩個重要的模組：\
 
 ![image](https://user-images.githubusercontent.com/94088141/147410264-39cd0410-1b71-4d57-b673-33ad900f9ea8.png)\
 
+改善方法
+-------------------
 
 
 
