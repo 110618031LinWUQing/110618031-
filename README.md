@@ -10,6 +10,7 @@
 ------
 ![image](https://user-images.githubusercontent.com/94088141/147402850-cefd6a30-e848-4bb2-bfef-926a98f2628c.png)
 Numpy\
+######
 NumPy是Python語言的一個擴充程式庫。支援高階大量的維度陣列與矩陣運算，此外也針對陣列運算提供大量的數學函數函式庫。\
 h5py\
 一個HDF5檔案就是一個容器，用於儲存兩類物件：datasets，類似於陣列的資料集合；groups，類似於資料夾的容器，可以儲存datasets和其它groups。當使用h5py時，最基本的準則為：\
@@ -31,7 +32,7 @@ matplotlib.pyplot\t
 簡單來說Matpotlib是一個強大python繪圖工具，也就是它可以將資料視覺化，資料視覺化是相當重要的，當我們在查看訓練資料時，可以利用它來視覺化資料，使我們比較好觀察資料的走向或者相關度。\
 Matpotlib有兩個重要的模組：\
 1.Pylab:Matlab的python版本。\
-2.Pyplot:呼叫NumPy的函式來做計算，再以圖形方式呈現。\
+2.Pyplot:呼叫NumPy的函式來做計算，再以圖形方式呈現。
 
 程式說明
 ------
