@@ -86,6 +86,8 @@ Categorical crossentropy
 --------------------
 Categorical crossentropy是用於一個多類分類任務的損失函數。\
 一種input資料只能屬於多個可能類別中的其中之一，我們的模型必須選擇一個，而此損失函數可以量化兩個概率之間的差異
+![image](https://user-images.githubusercontent.com/94088141/147458578-656acffd-e31d-45c9-8a3c-bda226cd55d3.png)\
+![image](https://user-images.githubusercontent.com/94088141/147458526-a4530a3b-c83e-4d4e-8ae9-75b84a4bb623.png)
 
 softmax
 --------
