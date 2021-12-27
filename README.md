@@ -80,9 +80,11 @@ Matpotlib有兩個重要的模組：\
 model.compile配置模型\
 優化器(optimizer):Adam\
 損失函數(loss_funtion):categorical_crossentropy\
-metrics(評估模型指標):accuracy(準確率)\
+metrics(評估模型指標):accuracy(準確率)
+
 softmax
 --------
+
 softmax 函數突出顯示最大值並抑制顯著低於最大值的值，儘管對於微小值而言並非如此。\
 它將輸出歸一化，使它們的總和為 1，這樣它們就可以直接被視為輸出的機率。\
 它通常用於分類器模型的最後一層，以category cross entropy作為損失函數。\
