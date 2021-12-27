@@ -82,6 +82,11 @@ model.compile配置模型\
 損失函數(loss_funtion):categorical_crossentropy\
 metrics(評估模型指標):accuracy(準確率)
 
+Categorical crossentropy
+--------------------
+Categorical crossentropy是用於一個多類分類任務的損失函數。\
+一種input資料只能屬於多個可能類別中的其中之一，我們的模型必須選擇一個，而此損失函數可以量化兩個概率之間的差異
+
 softmax
 --------
 
