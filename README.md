@@ -88,8 +88,7 @@ softmax
 softmax 函數突出顯示最大值並抑制顯著低於最大值的值，儘管對於微小值而言並非如此。\
 它將輸出歸一化，使它們的總和為 1，這樣它們就可以直接被視為輸出的機率。\
 它通常用於分類器模型的最後一層，以category cross entropy作為損失函數。\
-![image](https://user-images.githubusercontent.com/94088141/147456513-33463cc5-98b8-4e34-9e4c-144418a94cf1.png)\
-
+![image](https://user-images.githubusercontent.com/94088141/147456513-33463cc5-98b8-4e34-9e4c-144418a94cf1.png)
 ![image](https://user-images.githubusercontent.com/94088141/147410212-899d1788-969d-48b8-81e2-e3d982edc52b.png)\
 設置batch size 、epochs\
 lr_schedule:當epochs次數越訓練到後面時learning rate會越小，以利學到更好的解。\
