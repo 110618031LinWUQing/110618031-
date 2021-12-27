@@ -98,24 +98,32 @@ Pretrained Model 介紹
 ResNet
 ----------
 在ResNet論文出來前，當時的網路相較於現在，都是非常淺的設計。這個原因在於當時較深的網路比較容易訓練不起來，使得更深的網路有時反而帶來更差的效果。而ResNet提出的residual learning簡單地使得深層網路更容易訓練，也開啟了各種超深網路的時代。\
+
+------------------------------
 Residual / Bottleneck Block
 ----------------
 ResNet的網路設計其實很naive，就是簡單地增加一條路線做單純的加法 (如下圖左)，而這樣組合起來的convolution layer，論文稱為一個 (building) block，方法簡單卻使的深層網路訓練變得容易許多。而在\
 疊更深的網路時，ResNet設計了bottleneck (building) block，降低3x3 convolution的寬度，大幅減少了所需的運算量。\
 ![1-YcmhKmhvUPlxG3xI2ncyYg](https://user-images.githubusercontent.com/94088141/147437510-1d9a8f16-a788-4269-b6fc-27d9d73f4123.png)\
+
+---------------------------------
 Why Residual Learning
 -----------------------
 聽到深層網路訓練不起來，很容易直接想到gradient vanishing。不過ResNet論文卻不這麼認為，作者認為gradient vanishing應該已經在使用batch normalization後得到了一定non-zero variances的保證。\
 論文在實驗時，在一般堆疊 (plain)網路加上了batch normalization，作者透過觀察gradient確定batch normalization足夠保證forward時的non-zero variances、以及back propagation時良好的梯度。\
 而實驗結果也證明了一般堆疊的網路也能收斂在一個不差的地方。\
 ![1-p25TC3jO4BgC-lsAE4UCqA](https://user-images.githubusercontent.com/94088141/147437574-ad20d4fa-0a76-4a92-bf04-2055af4a0d25.png)\
+
+---------------------------------------
 整體架構都可以分為三大部分：
 -----------------------
 1.Input stem: 使用一般的convolution，並且用大的stride降低解析度。\
 2.Stage block: ResNet共有4個Stage block，每個stage block都是由數個building block堆疊而成。不論是用stride或是pooling，每個stage一般都會先降低解析度並加大寬度 (channel)，再做一連串的residual learning。\
 3.Output stem：依照任務，設計不同的輸出。一般來說這邊會隨著任務轉變，所以通常不算在ResNet的backbone裡。\
 ![1-cXaK9HVaLxBDUdaZRLAc_g](https://user-images.githubusercontent.com/94088141/147437703-432fa61b-ea33-4c30-ab04-2548f9e6cb3a.png)\
-由於每個 stage第一個 building block的輸入與 residual path連接的地方解析度與網路寬度都不同，所以第一個 block會多一個 convolution，做解析度與寬度的調整。
+由於每個 stage第一個 building block的輸入與 residual path連接的地方解析度與網路寬度都不同，所以第一個 block會多一個 convolution，做解析度與寬度的調整。\
+
+--------------------------------
 改善方法
 -------------------
 可以讓訓練圖片為灰階圖片下去訓練，因為此任務的圖片顏色貌似不太是分辨的重點特徵。\
